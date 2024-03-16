@@ -1,0 +1,249 @@
+*{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+header .brand-custom{
+    font-weight:bold;
+    font-size: 170%;
+}
+
+header .nav-custom{
+    font-weight:700;
+    color: black;
+    font-size: 80%;
+    opacity: 1;
+}
+
+
+
+.navbar .brand-custom,
+.navbar .nav-custom,
+.navbar .social-icons {
+  margin: 0 120px;  /* Adjust margin values as needed */
+  
+}
+
+
+.main-text-lower{
+  margin-top: 150px;
+  z-index: 10;
+  position: relative;
+  
+}
+
+.main-text-lower .classy{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: italic;
+}
+
+.main-text-lower .classy-white{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: italic;
+  color: aliceblue;
+}
+
+.margin-carousel{
+  margin-top: 25px;
+}
+
+.hero-video{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  opacity: 1;
+}
+
+.hero-video video{
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  
+}
+
+.big{
+  margin-top: 280px;
+  position: absolute;
+  font-size: 1000%;
+  opacity: 0.1;
+  font-weight: 700;
+
+}
+
+@media (max-width: 575.98px) {
+  .big {
+    font-size: 70px; /* fs-5 */
+  }
+  .about{
+    margin-top: 80px;
+    min-width: 100%;
+    min-height: 100%;
+    top: 110%;
+  }
+
+}
+
+.about{
+  
+  margin-top: 410px;
+  min-width: 100%;
+  min-height: 100%;
+  top: 110%;
+  
+ 
+}
+
+.about .section2-img{
+  width: 100%;
+  position: absolute;
+  right: 0%;
+  opacity: 1;
+ 
+}
+
+.small-text{
+  font-size: 10px;
+  font-weight:600;
+
+}
+
+.small-paragraph{
+  font-size: 14px;
+}
+
+.shadow-carousel {
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.6); /* Adjust shadow as needed */
+}
+
+.card-left{
+  margin-top: 240px;
+  
+  min-width: 240%;
+  min-height: 140%;
+  top: 80%;
+  right:1300px;
+}
+
+.card-smaller{
+  position: absolute;
+  margin-top: 600px;
+  min-width: 100%;
+  min-height: 100%;
+  top: 110%;
+  right: 90%;
+}
+.yt-video{
+  position: relative;
+  z-index: 99;
+  margin-top: 300px;
+  margin-left: 800px;
+  /* box-shadow: 0 0px 20px rgba(0, 0, 0, 0.6); Adjust shadow as needed */
+}
+
+.yt-video-smaller{
+  position: relative;
+  z-index: 99;
+  margin-top: 660px;
+  margin-right: 100px;
+  /* box-shadow: 0 0px 20px rgba(0, 0, 0, 0.6); Adjust shadow as needed */
+}
+
+.classy-2{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: italic;
+}
+
+.section-3{
+  position: relative;
+  margin-top: 200px;
+}
+
+.big-insta{
+  margin-top: -10px;
+  position: absolute;
+  font-size: 600%;
+  opacity: 0.1;
+  font-weight: 700;
+}
+
+
+/*SECTION 3*/
+
+.instagram-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0px;
+  margin-top: 180px;
+ 
+}
+
+.instagram-image {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.instagram-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+
+.instagram-image:nth-of-type(1),
+.instagram-image:nth-of-type(2) {
+  margin-top: -90px; /* Ajusta el valor para el espacio deseado */
+}
+
+.instagram-image:nth-of-type(3),
+.instagram-image:nth-of-type(4) {
+  margin-top: -80px; /* Ajusta el valor para el espacio deseado */
+}
+
+.form-pos{
+  margin-top: 130px;
+}
+
+.footer-black{
+  background-color: black;
+  margin-top: -400px;
+  padding: 200px;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.footer-content{
+  margin-top: -120px;
+  margin-left: 600px;
+  position: absolute;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer-links li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-links li a:hover {
+  text-decoration: underline;
+}
