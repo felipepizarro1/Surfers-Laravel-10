@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -416,6 +417,23 @@
     <script>
       AOS.init();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+    document.getElementById('form-email').addEventListener('submit', function(event) {
+        event.preventDefault(); // Evitar que el formulario se envíe normalmente
+        axios.defaults.headers.common['X-CSRF-TOKEN'] = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
+        // Enviar el formulario a través de AJAX
+        axios.post(this.action, new FormData(this))
+            .then(function(response) {
+                // Mostrar el mensaje de éxito
+                document.getElementById('success-message').innerText = response.data.success;
+                document.getElementById('success-message').style.display = 'block';
+            })
+            .catch(function(error) {
+                // Manejar errores si es necesario
+            });
+    });
+</script>
     
 
 </body>

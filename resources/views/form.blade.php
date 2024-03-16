@@ -1,5 +1,5 @@
 
-<form class="form-pos" action="{{ route('send-email') }}" method="POST">
+<form class="form-pos" action="{{ route('send-email') }}" method="POST" id="form-email">
     @csrf
     <div class="mb-3">
         
@@ -32,6 +32,7 @@
     <div class="mb-3">
         
         <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your message"></textarea>
+        <div id="success-message" style="display: none;"></div>
     </div>
     <button type="submit" class="btn btn-primary">SEND</button>
 </form>
