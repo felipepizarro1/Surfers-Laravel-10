@@ -19,4 +19,4 @@ Route::get('/', function () {
     return view('main');
 });
 
-Route::post('/send-email', [EmailController::class, 'sendEmail'])->name('send-email');
+Route::post('/send-email', [EmailController::class, 'sendEmail'])->name('send-email'); /*to remove the view after email connection*/

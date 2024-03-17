@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Correo Electrónico</title>
+    <title>Email from a client at SurfCo</title>
 </head>
 <body>
     <h1>New Email from a Client - Surf Co</h1>

@@ -20,13 +20,13 @@ class EmailController extends Controller
         'company' => 'nullable|string|max:255',
         'message' => 'required|string',
     ]);
-
+    dump($request->all());
     // Construir el correo electrónico
     $email = new EmailSurf($request->all());
 
     // Enviar el correo electrónico (STABLISHED RECIEVER EMAIL)
     Mail::to('fipizarro@hotmail.com')->send($email);
-
+    
     // Redireccionar a una página de confirmación o mostrar un mensaje de éxito
     return response()->json(['success' => '¡Email succesfully send!']);
     }

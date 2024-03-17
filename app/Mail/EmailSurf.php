@@ -45,7 +45,7 @@ class EmailSurf extends Mailable
     public function build()
     {
         return $this->subject('New Email from a Client - Surf Co')
-                    ->markdown('emails.emailview');
+                    ->markdown('emailview');
     }
 
     /**

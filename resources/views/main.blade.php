@@ -420,12 +420,13 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script>
     document.getElementById('form-email').addEventListener('submit', function(event) {
-        event.preventDefault(); // Evitar que el formulario se envíe normalmente
+        // event.preventDefault(); // Evitar que el formulario se envíe normalmente
         axios.defaults.headers.common['X-CSRF-TOKEN'] = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
         // Enviar el formulario a través de AJAX
         axios.post(this.action, new FormData(this))
             .then(function(response) {
                 // Mostrar el mensaje de éxito
+                console.log("This is the axios response", response.data)
                 document.getElementById('success-message').innerText = response.data.success;
                 document.getElementById('success-message').style.display = 'block';
             })
