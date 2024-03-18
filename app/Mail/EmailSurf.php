@@ -44,7 +44,7 @@ class EmailSurf extends Mailable
      */
     public function build()
     {
-        return $this->subject('New Email from a Client - Surf Co')
+        return $this->subject('New Message from a Client - Surf Co')
                     ->markdown('emailview');
     }
 
@@ -54,7 +54,7 @@ class EmailSurf extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Email Surf',
+            subject: 'SurfCo. Contact Form',
         );
     }
 

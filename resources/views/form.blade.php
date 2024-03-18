@@ -25,15 +25,13 @@
             <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone">
             <input type="text" class="form-control" id="company" name="company" placeholder="Company">
         </div>
-        
-        
-            
-    
+
         <div class="mb-3">
             
             <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your message"></textarea>
-            <div id="success-message" style="display: none;"></div>
+            
         </div>
+        <div id="success-message" style="display: none; color: green;">Email sent successfully!</div>
         <button type="submit" class="btn btn-primary">SEND</button>
     </form>
 

@@ -348,7 +348,7 @@
       <!--SECTION 3-->
       <section class="container section-3">
         <div class="row">
-          <div class="col-6 " data-aos="fade-right">
+          <div class="col-md-6 col-sm-12 " data-aos="fade-right">
             <h1 class="big-insta">INSTAGRAM</h1>
             <div class="row instagram-grid">
               <div class="col-3  instagram-image">
@@ -365,7 +365,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6 " data-aos="flip-down">
+          <div class="col-md-6 col-sm-12" data-aos="flip-down">
             <!--INSERT FORM ! -->
             @include('form')
           </div>
@@ -427,11 +427,15 @@
             .then(function(response) {
                 // Mostrar el mensaje de éxito
                 console.log("This is the axios response", response.data)
-                document.getElementById('success-message').innerText = response.data.success;
+                document.getElementById('success-message').innerText =  "Email sent successfully!";
                 document.getElementById('success-message').style.display = 'block';
+                document.getElementById('success-message').style.color = 'green';
             })
             .catch(function(error) {
-                // Manejar errores si es necesario
+                document.getElementById('success-message').innerText =  "Something went wrong :(";
+                document.getElementById('success-message').style.display = 'block';
+                document.getElementById('success-message').style.color = 'red';
+                
             });
     });
 </script>

@@ -28,8 +28,6 @@
     <h2>Company</h2>
     <p>{{ $company}}
     </p>
-    <h2>Message</h2>
-    <p>{{ $message}}
     </p>
     
     
